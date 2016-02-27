@@ -1,0 +1,291 @@
+section#work.section
+    .section-row-container
+        .section-row
+            .container
+                .row
+                    .col-lg-3
+                        h1.section-title.show-counter
+                            !='Our Work'
+                            small
+                                !='Check out our recent projects and we’re sure you’ll immediately fall in love.'
+                    .col-lg-9
+                        .macbook-slider
+                            .wrap
+                                .royalSlider.rsHydrogen
+                                    .slider-media.project-slide
+                                        figure
+                                            img.rsImg(src="demo/projects/slider/thumbs/1.jpg", alt="")/
+                                            figcaption
+                                                !='<span>The Freestyler</span>'
+                                        .overlay.transparent
+                                            ul
+                                                li.mfp-zoom
+                                                    a(href="demo/projects/slider/1.jpg")
+                                                        i.gi.gi-resize-full
+                                                li.mfp-details
+                                                    a( href="#")
+                                                        i.gi.gi-search
+                                    .slider-media.project-slide
+                                        figure
+                                            img.rsImg(src="demo/projects/slider/thumbs/vid.jpg", alt="", data-rsVideo="http://vimeo.com/11475955")/
+                                            figcaption.mfp-details
+                                                a(href="#")
+                                                    !='Beauty Reel'
+                                    .slider-media.project-slide
+                                        figure
+                                            img.rsImg(src="demo/projects/slider/thumbs/2.jpg", alt="")/
+                                            figcaption
+                                                !='<span>Colorful Lady</span>'
+                                        .overlay.transparent
+                                            ul
+                                                li.mfp-zoom
+                                                    a(href="demo/projects/slider/2.jpg")
+                                                        i.gi.gi-resize-full
+                                                li.mfp-details
+                                                    a( href="#")
+                                                        i.gi.gi-search
+                                    .slider-media.project-slide
+                                        figure
+                                            img.rsImg(src="demo/projects/slider/thumbs/3.jpg", alt="")/
+                                            figcaption
+                                                !='<span>The Hawk</span>'
+                                        .overlay.transparent
+                                            ul
+                                                li.mfp-zoom
+                                                    a(href="demo/projects/slider/3.jpg")
+                                                        i.gi.gi-resize-full
+                                                li.mfp-details
+                                                    a(href="#")
+                                                        i.gi.gi-search
+        .section-row.no-padding-top
+            .container
+                .row
+                    .col-md-8.col-md-push-4
+                        h2.section-separator-title
+                            !='<span data-shadow-text="Want to See More?">Want to See More?</span>'
+                .row(data-animation-chain-duration="1200")
+                    .col-md-12
+                        .projects
+                            .filter
+                                !='<span class="active-label visible-xs" data-toggle="dropdown">All</span>'
+                                ul
+                                    li.active
+                                        a(href="#", data-filter="*")
+                                            !='All'
+                                    li
+                                        a(href="#", data-filter=".illustration")
+                                            !='Illustration'
+                                    li
+                                        a(href="#", data-filter=".web-design")
+                                            !='Web Design'
+                                    li
+                                        a(href="#", data-filter=".branding")
+                                            !='Branding'
+                                    li
+                                        a(href="#", data-filter=".photography")
+                                            !='Photography'
+                            .items
+                                .grid-sizer
+                                .gutter-sizer
+                                .project.branding.web-design(data-animation-name="fadeInDown")
+                                    .project-image
+                                        img(src="demo/projects/thumbs/1.jpg", alt="")/
+                                        .overlay
+                                            ul.actions
+                                                li.mfp-zoom
+                                                    a(href="demo/projects/1.jpg")
+                                                        i.gi.gi-resize-full
+                                                li.mfp-details
+                                                    a(href="project-body-art.html")
+                                                        i.gi.gi-search
+                                    .project-info
+                                        h4.project-name
+                                            !='Tattoo Body Art'
+                                        .project-categories
+                                            !='Branding, Web Design'
+                                .project.photography.web-design(data-animation-name="fadeInDown")
+                                    .project-image
+                                        img(src="demo/projects/thumbs/2.jpg", alt="")/
+                                        .overlay
+                                            ul.actions
+                                                li.mfp-zoom
+                                                    a(href="demo/projects/2.jpg")
+                                                        i.gi.gi-resize-full
+                                                li.mfp-details
+                                                    a( href="project-manhattan.html")
+                                                        i.gi.gi-search
+                                    .project-info
+                                        h4.project-name
+                                            !='Future Manhattan'
+                                        .project-categories
+                                            !='Photography, Web Design'
+                                .project.illustration.web-design(data-animation-name="fadeInDown")
+                                    .project-image
+                                        img(src="demo/projects/thumbs/3.jpg", alt="")/
+                                        .overlay
+                                            ul.actions
+                                                li.mfp-zoom
+                                                    a(href="demo/projects/3.jpg")
+                                                        i.gi.gi-resize-full
+                                                li.mfp-details
+                                                    a( href="project-elle.html")
+                                                        i.gi.gi-search
+                                    .project-info
+                                        h4.project-name
+                                            !='Elle Magazine'
+                                        .project-categories
+                                            !='Illustration, Web Design'
+                                .project.photography(data-animation-name="fadeInDown")
+                                    .project-image
+                                        img(src="demo/projects/thumbs/4.jpg", alt="")/
+                                        .overlay
+                                            u.actions
+                                                li.mfp-zoom
+                                                    a(href="demo/projects/4.jpg")
+                                                        i.gi.gi-resize-full
+                                                li.mfp-details
+                                                    a(href="project-dark-castle.html")
+                                                        i.gi.gi-search
+                                    .project-info
+                                        h4-project-name
+                                            !='The Dark Castle'
+                                        div-project-categories
+                                            !='Photography'
+                                .project.branding.photography(data-animation-name="fadeInDown")
+                                    .project-image
+                                        img(src="demo/projects/thumbs/5.jpg", alt="")/
+                                        .overlay
+                                            ul.actions
+                                                li.mfp-zoom
+                                                    a(href="demo/projects/5.jpg")
+                                                        i.gi.gi-resize-full
+                                                li.mfp-details
+                                                    a(href="project-smokey-eyes.html")
+                                                        i.gi.gi-search
+                                    .project-info
+                                        h4.project-name
+                                            !='Smokey Eyes Makeup'
+                                        div.project-categories
+                                            !='Branding, Photography'
+                                .project.web-design(data-animation-name="fadeInDown")
+                                    .project-image
+                                        img(src="demo/projects/thumbs/6.jpg", alt="")/
+                                        .overlay
+                                            ul.actions
+                                                li.mfp-zoom
+                                                    a(href="demo/projects/6.jpg")
+                                                        i.gi.gi-resize-full
+                                                li.mfp-details
+                                                    a(href="project-lipsticks.html")
+                                                        i.gi.gi-search
+                                    .project-info
+                                        h4.project-name
+                                            !='K.A.C Lipsticks'
+                                        div.project-categories
+                                            !='Web Design'
+                                .project.photography(data-animation-name="fadeInDown")
+                                    .project-image
+                                        img(src="demo/projects/thumbs/7.jpg", alt="")/
+                                        .overlay
+                                            ul.actions
+                                                li.mfp-zoom
+                                                    a(href="demo/projects/7.jpg")
+                                                        i.gi.gi-resize-full
+                                                li.mfp-details
+                                                    a(href="project-pink-lady.html")
+                                                        i.gi.gi-search
+                                    .project-info
+                                        h4.project-name
+                                            !='The Pink Lady'
+                                        div.project-categories
+                                            !='Photography'
+                                .project.illustration.web-design(data-animation-name="fadeInDown")
+                                    .project-image
+                                        img(src="demo/projects/thumbs/8.jpg", alt="")/
+                                        .overlay
+                                            ul.actions
+                                                li.mfp-zoom
+                                                    a(href="demo/projects/8.jpg")
+                                                        i.gi.gi-resize-full
+                                                li.mfp-details
+                                                    a(href="project-moon-girl.html")
+                                                        i.gi.gi-search
+                                    .project-info
+                                        h4.project-name
+                                            !='Moon Girl'
+                                        div.project-categories
+                                            !='Illustration, Web Design'
+                            .project-load-more
+                                a(href="#")
+                                    i.gi.gi-plus
+        #clients.section-row.no-padding-top.half-padding-bottom
+            .container
+                .row(data-animation-chain-duration="1500")
+                    .col-md-12
+                        h2.section-separator-title.separator-align-left
+                            span(data-shadow-text="Featured Clients")
+                                !='Featured Clients'
+                        p.lead
+                            !='We have worked with some of the worlds biggest brands, along with famous designers, artists, bloggers, and entrepreneurs.'
+                        .client-list
+                            ul
+                                li.client
+                                    .client-logo(data-animation-name="fadeInUp")
+                                        .logo
+                                            a(href="#")
+                                                img(src="demo/clients/1.png", alt="Toyota")/
+                                li.client
+                                    .client-logo(data-animation-name="fadeInUp")
+                                        .logo
+                                            a(href="#")
+                                                img(src="demo/clients/2.png" alt="Gilette")/
+                                li.client
+                                    .client-logo(data-animation-name="fadeInUp")
+                                        .logo
+                                            a(href="#")
+                                                img(src="demo/clients/3.png", alt="Samsung")/
+                                li.client
+                                    .client-logo(data-animation-name="fadeInUp")
+                                        .logo
+                                            a(href="#")
+                                                img(src="demo/clients/4.png", alt="Nike")/
+                                li.client
+                                    .client-logo(data-animation-name="fadeInUp")
+                                        .logo
+                                            a(href="#")
+                                                img(src="demo/clients/6.png", alt="Toyota")/
+                                li.client
+                                    .client-logo(data-animation-name="fadeInUp")
+                                        .logo
+                                            a(href="#")
+                                                img(src="demo/clients/8.png", alt="Samsung")/
+                                li.client
+                                    .client-logo(data-animation-name="fadeInUp")
+                                        .logo
+                                            a(href="#")
+                                                img(src="demo/clients/11.png", alt="Toyota")/
+                                li.client
+                                    .client-logo(data-animation-name="fadeInUp")
+                                        .logo
+                                            a(href="#")
+                                                img(src="demo/clients/13.png", alt="Samsung")/
+                                li.client
+                                    .client-logo(data-animation-name="fadeInUp")
+                                        .logo
+                                            a(href="#")
+                                                img(src="demo/clients/14.png", alt="Nike")/
+                                li.client
+                                    .client-logo(data-animation-name="fadeInUp")
+                                        .logo
+                                            a(href="#")
+                                                img(src="demo/clients/16.png", alt="Nestle")/
+
+
+section.section.th-dark(data-background="demo/parallax/3.jpg", data-background-xs="demo/parallax/3-xs.jpg",data-background-md="demo/parallax/3-md.jpg", data-background-lg="demo/parallax/3-lg.jpg")
+    .section-row-container
+        .section-row.three-quarters-padding-top.three-quarters-padding-bottom
+            .container
+                .row
+                    .col-md-12
+                        .tweet-slider(data-username="envato", data-count="3", data-animation-name="fadeInUp")
+    .section-overlay

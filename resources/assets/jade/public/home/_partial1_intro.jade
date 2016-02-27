@@ -1,0 +1,57 @@
+include ./../../template/mixin.jade
+
+.site-loader
+
+section#home.site-splash.fullscreen
+    .splash-inner
+        .splash-slider
+            .splash-content
+                .container
+                    .row
+                        .col-md-12
+                            .splash-text
+                                h4.splash-intro
+                                    a(href="#")
+                                        ='Hello there!'
+                                h1.splash-headline
+                                    !='We are Hy<span class="text-primary">dro</span>gen'
+                                .splash-description
+                                    p
+                                        ='New York based digital agency who loves designing great websites'
+            .splash-content
+                .container
+                    .row
+                        .col-md-12
+                            .splash-text
+                                h4.splash-intro
+                                    a(href="#")
+                                        ="We're Creative"
+                                h1.splash-headli
+                                    ="See our work, you'll fall in love"
+                                .splash-descripti
+                                    p
+                                        ='Our work ranges from web, print to digital marketing'
+            .splash-content
+                .container
+                    .row
+                        .col-md-12
+                            .splash-text
+                                h4.splash-intro
+                                    a(href="#")
+                                        ="Let's Talk Today"
+                                h1.splash-headline
+                                    ="Have a project? Let's talk"
+                                .splash-description
+                                    p
+                                        ='Every client working with us are always satisfied, we can prove it!'
+
+            .cycle-next
+            .cycle-prev
+
+        .splash-media(data-background="demo/img/splash-bg.jpg", data-background-xs="demo/img/splash-bg-xs.jpg",data-background-md="demo/img/splash-bg-md.jpg", data-background-lg="demo/img/splash-bg-lg.jpg")
+            .overlay
+        .splash-feedback
+            span.mouse
+                span.fa.fa-angle-down
+            span.caption
+                ='Scroll'

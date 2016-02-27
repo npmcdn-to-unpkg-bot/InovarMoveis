@@ -1,0 +1,49 @@
+#contact.section
+    .section-row-container
+        .section-row.half-padding-bottom
+            .container
+                .row
+                    .col-lg-12
+                        h1.section-title.show-counter
+                            !='Get in Touch <small>Feel free to contact us if you have something to say!</small>'
+                .row
+                    .col-md-8
+                        form(method="post", class="form-horizontal contact-form", action="php/contact/contact.php")
+                            // Honeypot SPAM Protection
+                            !='<input type="text" name="cf[honeypot]" style="display: none">'
+                            // END Honeypot SPAM Protection
+                            .form-group
+                                col-md-6
+                                    !='<input type="text" name="cf[name]" class="form-control required" placeholder="Name">'
+                                </div>
+                                col-md-6
+                                    !='<input type="email" name="cf[email]" class="form-control required email" placeholder="Email">'
+                                </div>
+                            </div>
+                            .form-group
+                                col-md-6
+                                    !='<input type="url" name="cf[url]" class="form-control url" placeholder="URL">'
+                                </div>
+                                col-md-6
+                                    !='<input type="text" name="cf[subject]" class="form-control required" placeholder="Subject">'
+                                </div>
+                            </div>
+                            .form-group
+                                col-md-12
+                                    !='<textarea name="cf[message]" rows="6" class="form-control required" placeholder="Message"></textarea>'
+                                </div>
+                            </div>
+                            .form-group
+                                col-md-12
+                                    !='<input type="submit" value="Submit" class="btn btn-sm btn-block btn-primary">'
+                    .col-md-4
+                        aside.sidebar
+                            .sidebar-block
+                                p
+                                    !='<strong class="text-semibold">Hydrogen Digital Agency</strong><br>111 Fifth Avenue, 34th Floor<br>New York<br>United States'
+                            .sidebar-block
+                                p.lead
+                                    !='<strong>E:</strong> hello@hydrogendigital.com<br><strong>P:</strong> 0987 6543 2100'
+        .section-row.no-padding-top.no-padding-bottom
+            .google-maps-container
+                .google-maps(data-center="40.804844,-73.933538", data-markers!="[{&quot;lat&quot;:&quot;40.804844&quot;,&quot;lng&quot;:&quot;-73.933538&quot;}]", data-zoom="16", data-scrollWheel="false", data-monochrome="true")
