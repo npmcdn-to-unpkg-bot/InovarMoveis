@@ -16,5 +16,12 @@
   ],
   "dependencies": {
     "atemporaleNEXTbower": "~1.0.3"
+  },
+  "resolutions": {
+    "get-size": "~1.2.2",
+    "outlayer": "~1.4.0",
+    "masonry": "~3.3.0",
+    "fizzy-ui-utils": "~1.0.1",
+    "jquery": ">=1.9 <2.0.0"
   }
 }

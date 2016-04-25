@@ -5,18 +5,29 @@
  */
 var elixir = require('laravel-elixir');
             require('laravel-elixir-jade');
-var gulp = require('gulp');
-var bower = require('gulp-bower');
+var gulp = require('gulp'),
+    bower = require('gulp-bower'),
+    livereload = require('gulp-livereload');
 
 /*
  |--------------------------------------------------------------------------
- | Bower setup
+ | Path var
  |--------------------------------------------------------------------------
  */
-var bowerDir = './resources/assets/bower/';
+var devBower = './resources/assets/bower/',
+    devLess  = './resources/assets/less',
+    devJade  = './resources/assets/jade',
+    pubCSS   = 'public/css',
+    pubJS    = 'public/js',
+    pubLib   = '.public/libs';
 
+/*
+ |--------------------------------------------------------------------------
+ | Bower task
+ |--------------------------------------------------------------------------
+ */
 gulp.task('bower', function() {
-    return bower({directory:bowerDir, cmd:'update'})
+    return bower({directory:devBower, cmd:'update'});
 });
 
 /*
@@ -41,37 +52,30 @@ elixir(function(mix) {
         blade: true
     });
 
-    //Path LESS and JS production and CSS & JS production
-    var lessDir  = './resources/assets/less';
-    var pubCSS = 'public/css';
-    var pubJS = 'public/js';
-
-
-    //LESS and JS settings
-    mix.less([ lessDir + '/pages/home.less'], pubCSS + "home.css");//delete less
-
-
-    mix.scripts(["components/layout.js", "pages/home.js"], pubJS + "home.min.js");
 
 
 
-    //setting Bower resources copy
-    if (elixir.config.production) {
+    //LESS and JS pages settings
+    mix.less([ devLess + '/pages/home.less'], pubCSS + "/home.css");//delete less
 
-        //Path directory resources compiled
-        var lib = '.public/libs';
 
-        //CSS libraries
-        mix.styles([
-            bowerDir + "/css/font-awesome.min.css",
-            bowerDir + "/select2-bootstrap.min.css"
-        ], lib + '/css/bower.css');
+    mix.scripts(["components/layout.js", "pages/home.js"], pubJS + "/home.min.js");
 
-        //JS libraries
-        mix.scripts([
-            bowerDir + "/jquery.js",
-            bowerDir + "palette.js"
-        ], lib + '/js/bower.js');
-    }
+    //LESS and JS lib settings
 
+
+
+
+
+    mix.browserSync({
+        proxy: 'inovarcompleto.dev/'
+    });
+
+    /*gulp.task('watch', function() {
+        livereload.listen();
+        gulp.watch(pubCSS+'/*.css', ['less']);
+        gulp.watch(pubJS+'/*.js', ['scripts']);
+        gulp.watch(devJade+'/*.less', ['jade']);
+    });*/
 });
+

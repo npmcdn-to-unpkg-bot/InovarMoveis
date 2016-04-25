@@ -34,7 +34,17 @@
     <meta name="msapplication-wide310x150logo" content="{{ asset('/img/favicon/widetile.png') }}">
     <meta name="msapplication-square310x310logo" content="{{ asset('/img/favicon/largetile.png') }}">
     <!--Fonts external link-->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:300,400,600,700,300italic,400italic,600italic,700italic|Droid+Serif:400,400italic">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:400,300,700">
+    <!-- IE Warning CSS--><!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie-warning.css" >
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie8-fix.css" >
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <!--Page CSS-->@yield('cssPagina', '')
 
   </head>
